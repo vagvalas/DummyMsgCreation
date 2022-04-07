@@ -7,3 +7,6 @@ You need to create a WPF app .NET (and use mainly use 4.6.2 .NET as framework)
 You need to add this package https://github.com/Sicos1977/MsgKit to your Project, via NuGet package manager 
 or using" Install-Package MsgKit "
 ```
+# Final thoughts
+
+* It was a one-time script for generating dummy emails, can be much better if generalized
