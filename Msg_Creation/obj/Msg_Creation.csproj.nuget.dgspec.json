@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\Msg_Creation.csproj": {}
+    "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\Msg_Creation.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\Msg_Creation.csproj": {
+    "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\Msg_Creation.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\Msg_Creation.csproj",
+        "projectUniqueName": "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\Msg_Creation.csproj",
         "projectName": "Msg_Creation",
-        "projectPath": "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\Msg_Creation.csproj",
+        "projectPath": "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\Msg_Creation.csproj",
         "packagesPath": "C:\\Users\\Vangelis\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\obj\\",
+        "outputPath": "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Vangelis\\AppData\\Roaming\\NuGet\\NuGet.Config",

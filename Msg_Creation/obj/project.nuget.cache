@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gj0X0wOgIkV8ZoRUGZE3jb/fMIn5qAuTuiB3NNAUU7B27v36sIBIfujTckz5CNm385erU5HBa4K8I8Puw2M2CA==",
+  "dgSpecHash": "HNpxp6higzfHrNRj7y3WjBSX4+4Io+pU8rY4bouNFPmrEgzP5nrgwqKyVOidEGNoaTzFOVNeDb0zGMRlz+L2lQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Vangelis\\source\\repos\\Msg_Creation\\Msg_Creation\\Msg_Creation.csproj",
+  "projectFilePath": "C:\\Users\\Vangelis\\Source\\Repos\\vagvalas\\DummyMsgCreation\\Msg_Creation\\Msg_Creation.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Vangelis\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Vangelis\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
