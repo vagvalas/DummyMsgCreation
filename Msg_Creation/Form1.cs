@@ -16,18 +16,21 @@ namespace Msg_Creation
         public Form1()
         {
             InitializeComponent();
+            //for future usage
+            txtb_from_email.Enabled = false;
+            txtb_from_name.Enabled = false;
         }
         private void btnSelectRange_Click(object sender, EventArgs e)
         {
+            endDate = dtpEndDate.Value;
+        }
+        private void dtpStartDate_ValueChanged(object sender, EventArgs e)
+        {
+            // Set the minimum date of dtpEndDate to the selected date of dtpStartDate
+            dtpEndDate.MinDate = dtpStartDate.Value;
             startDate = dtpStartDate.Value;
             endDate = dtpEndDate.Value;
-            Debug.WriteLine(startDate);
-
-            
-            // Do something with the selected date range...
-            //TEST PUSH
         }
-
         private void btn_generate_Click(object sender, EventArgs e)
         {
             //Ensuring all other is disabled during generating, cause we dont mess or corrupt the process 
@@ -35,8 +38,6 @@ namespace Msg_Creation
             dtpEndDate.Enabled = false;
             btn_outputDirectory.Enabled = false;
             btn_selectCSV.Enabled = false; 
-            txtb_from_email.Enabled = false;
-            txtb_from_name.Enabled = false; 
             txtb_subject.Enabled = false;
             txtb_to_email.Enabled = false;
             txtb_to_name.Enabled = false;
@@ -100,20 +101,7 @@ namespace Msg_Creation
         {
             // Get the current text content of the RichTextBox
             mainBody = rich_txtb_body.Text;
-            mainBody = rich_txtb_body.Text.Replace("\n", Environment.NewLine);
-            mainBody = rich_txtb_body.Text.Replace("NAME", person_name).Replace("{DATE}", cur_date.ToString("MM/dd/yyyy"));
-            /*// Find all instances of the string "NAME" within the text content
-            int index = mainBody.IndexOf("NAME");
-            //Debug.WriteLine(person_name);
-            while (index != -1)
-            {
-                // Replace the string "NAME" with the value of your variable using string interpolation
-                tempbody = mainBody.Substring(0, index) + $"{person_name}" + mainBody.Substring(index + 4);
-                Debug.WriteLine("MPIKE");
-                // Find the next occurrence of the string "NAME"
-                index = mainBody.IndexOf("NAME", index + 1);
-            }*/
-
+            mainBody = rich_txtb_body.Text.Replace("{NAME}", person_name).Replace("{DATE}", cur_date.ToString("dd/MM/yyyy")).Replace("{COMPANY}", org_name);
             // Update the text content of the RichTextBox with the interpolated values
             //rich_txtb_body.Text = mainBody;
         }
@@ -124,7 +112,6 @@ namespace Msg_Creation
                 Debug.WriteLine("ENTER");
                 e.SuppressKeyPress = true;  // prevent the default behavior of creating a new paragraph
                 rich_txtb_body.AppendText(Environment.NewLine);
-                //Debug.WriteLine(rich_txtb_body.Text);// insert a new line character
             }
         }
 

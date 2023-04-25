@@ -51,6 +51,7 @@
             this.txtb_subject = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
             this.rich_txtb_body = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // dtpStartDate
@@ -59,7 +60,7 @@
             this.dtpStartDate.Name = "dtpStartDate";
             this.dtpStartDate.Size = new System.Drawing.Size(200, 23);
             this.dtpStartDate.TabIndex = 0;
-            this.dtpStartDate.ValueChanged += new System.EventHandler(this.btnSelectRange_Click);
+            this.dtpStartDate.ValueChanged += new System.EventHandler(this.dtpStartDate_ValueChanged);
             // 
             // dtpEndDate
             // 
@@ -230,18 +231,30 @@
             // 
             // rich_txtb_body
             // 
-            this.rich_txtb_body.Location = new System.Drawing.Point(93, 161);
+            this.rich_txtb_body.Location = new System.Drawing.Point(93, 156);
             this.rich_txtb_body.Name = "rich_txtb_body";
             this.rich_txtb_body.Size = new System.Drawing.Size(429, 187);
             this.rich_txtb_body.TabIndex = 20;
             this.rich_txtb_body.Text = "";
             this.rich_txtb_body.KeyDown += new System.Windows.Forms.KeyEventHandler(this.richTextBoxBody_KeyDown);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(163, 126);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(379, 30);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "You can use {NAME} for Individual Name, {DATE} for Current Date and \r\n{COMPANY} f" +
+    "or Company\'s name";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(935, 556);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.rich_txtb_body);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.txtb_subject);
@@ -295,5 +308,6 @@
         private TextBox txtb_to_name;
         private TextBox txtb_subject;
         private RichTextBox rich_txtb_body;
+        private Label label1;
     }
 }
