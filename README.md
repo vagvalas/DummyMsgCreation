@@ -17,6 +17,7 @@ Second column has a value "email" (this is used to represent the SENDER of EACH 
 Third column has a value "name" (it can be anything, and can be used in main body as {NAME}
 ```
 ![εικόνα](https://github.com/vagvalas/DummyMsgCreation/assets/19560574/a66ceabb-8088-4238-be16-403dbed090fb)
+
 2. Select start and end date so the program to understand which dates needs to be generated
 ![εικόνα](https://github.com/vagvalas/DummyMsgCreation/assets/19560574/367c379a-5527-4e73-8c25-5cdfbd320852)
 
